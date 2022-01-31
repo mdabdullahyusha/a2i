@@ -30,7 +30,7 @@ $(document).ready(function() {
       afterRender: function(){},
   });
   $('#pagepiling').pagepiling({
-      sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#fff'],
+      sectionsColor: ['#fff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#fff'],
   });
     // End
 });
@@ -73,4 +73,10 @@ $(document).ready(function() {
         ]});
     // End
     
+});
+
+new WOW().init();
+
+new VenoBox({
+  selector: ".my-link"
 });
