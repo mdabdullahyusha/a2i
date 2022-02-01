@@ -2,7 +2,7 @@ $(document).ready(function() {
     // For PagePiling
   $('#pagepiling').pagepiling({
       menu: '.menu',
-      direction: 'vertical',
+      direction: 'horizontal',
       verticalCentered: true,
       sectionsColor: [],
       anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
@@ -95,9 +95,10 @@ function NavbarVisible () {
 function pageCount () {
   if($('.pp-section.active').attr('pageid')) {
     $('.pageNo').html($('.pp-section.active').attr('pageid'));
+    $('.page__number').addClass('page_count');
   }
   else {
-    
+    $('.page__number').removeClass('page_count');
   }
 }
 

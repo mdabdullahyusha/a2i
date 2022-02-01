@@ -26,15 +26,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #8ED218;
+    background: #0A9444;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: red;
+    background: #0ba54b;
 }
 /* ----------------------------------------------------------------------------
 ----------------------------- Universal CSS End ---------------------------- */
@@ -442,7 +442,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	align-items: center;
 	/*justify-content: center;
 	*/position: fixed;
-	right: -100%;
+	right: -110px;
 	top: 170px;
 	font-size: 12px;
 	color: #0A9444;
