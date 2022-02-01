@@ -158,6 +158,24 @@ h1, h2, h3, h4, h5, h6, p, span {
 .logo img{
 	width: 120px;
 }
+
+.main_menu.navbar-visible .logo {
+	opacity: 1 ;
+	visibility: visible ;
+}
+
+.logo {
+	transition: .3s;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+
+
 .nav__bar {
 	display: flex;
 }
@@ -200,8 +218,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 .menu li a:hover {
 	color: #000;
 }
+
 .collapse__bar {
 	height: 35px;
+	border: none;
 	width: 35px;
 	border-radius: 50%;
 	color: #fff;
@@ -420,13 +440,23 @@ h1, h2, h3, h4, h5, h6, p, span {
 .page__number {
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
-	position: fixed;
-	right: 0;
+	/*justify-content: center;
+	*/position: fixed;
+	right: -100%;
 	top: 170px;
 	font-size: 12px;
 	color: #0A9444;
+	z-index: 98;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
+
+.page_count.page__number {
+	right: 0;
+} 
 /* ----------------------------------------------------------------------------
 ------------------------------ TCV Part End -------------------------------- */
 
@@ -984,8 +1014,24 @@ h1, h2, h3, h4, h5, h6, p, span {
 ------------------------ SideMenu Part Start ------------------------------- */
 .sidemenu__part {
 	overflow-x: hidden;
+	visibility: hidden;
+	opacity: 0;
 	position: fixed;
 	width: 100%;
+	background: #FFF;
+	top: 0;
+	z-index: 98;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+.onScreen.sidemenu__part {
+	visibility: visible;
+	opacity: 1;
+
 }
 .sidemenu__relatives{
 	position: relative;
@@ -996,8 +1042,16 @@ h1, h2, h3, h4, h5, h6, p, span {
 	right: 0;
 }
 .sidemenu__event {
-	position: scroll;
+	height: 100vh;
+	overflow-y: auto;
+	scrollbar-color: transparent transparent;
 }
+
+.sidemenu__event::-webkit-scrollbar {
+	width: 0;
+}
+
+
 .menus {
 	padding-top: 150px;
 }
@@ -1044,9 +1098,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 /* ----------------------------------------------------------------------------
 ------------------------ Innovation Page Start ----------------------------- */
-.innovation__part {
+/* .innovation__part {
 	padding-top: 150px;
-}
+} */
 .innovation__head h3 {
 	font-size: 40px;
 	color: #0A9444;

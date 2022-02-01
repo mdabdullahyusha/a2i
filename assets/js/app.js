@@ -30,9 +30,11 @@ $(document).ready(function() {
       
       afterRender: function(anchorLink, index){
         NavbarVisible();
+        pageCount();
       },
       afterLoad: function(anchorLink, index){
         NavbarVisible();
+        pageCount();
       }
   });
     // End
@@ -89,6 +91,59 @@ function NavbarVisible () {
       $('.main_menu').removeClass('navbar-visible');
   }
 }
+// Index Page Counter Function
+function pageCount () {
+  if($('.pp-section.active').attr('pageid')) {
+    $('.pageNo').html($('.pp-section.active').attr('pageid'));
+  }
+  else {
+    
+  }
+}
+
+//Side menu active and deactive
+$(function(){
+  $('#sidenav_button').on('click', function(){
+    $('.sidemenu__part').toggleClass('onScreen');
+    if($('.sidemenu__part').hasClass('onScreen')) {
+      $('.collapse__bar').html('<i class="fas fa-times"></i>')
+
+      //menu css
+      $('.logo').css({'visibility':'hidden', 'opacity': '0'});
+      $('.menu').css({'visibility':'hidden', 'opacity':'0'});
+      $('.main_menu').css({'background':'transparent'});
+    }
+    else {
+      $('.collapse__bar').html('<i class="fas fa-bars"></i>');
+
+    //menu css
+    $('.logo').removeAttr('style');
+    $('.menu').removeAttr('style');
+    $('.main_menu').removeAttr('style');
+    }
+  })
+
+  //check on load if side menu is active
+  if($('.sidemenu__part').hasClass('onScreen')) {
+    $('.collapse__bar').html('<i class="fas fa-times"></i>');
+
+          //menu css
+          $('.logo').css({'visibility':'hidden', 'opacity': '0'});
+          $('.menu').css({'visibility':'hidden', 'opacity':'0'});
+          $('.main_menu').css({'background':'transparent'});
+  }
+  else {
+    $('.collapse__bar').html('<i class="fas fa-bars"></i>');
+
+    //menu css
+    $('.logo').removeAttr('style');
+    $('.menu').removeAttr('style');
+    $('.main_menu').removeAttr('style');
+  }
+
+})
+
+
 
 
 //wow
