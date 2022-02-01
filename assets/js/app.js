@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // For PagePiling
   $('#pagepiling').pagepiling({
-      menu: null,
+      menu: '.menu',
       direction: 'vertical',
       verticalCentered: true,
       sectionsColor: [],
@@ -17,6 +17,7 @@ $(document).ready(function() {
       keyboardScrolling: true,
       sectionSelector: '.section',
       animateAnchor: false,
+      sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
       navigation: {
           'textColor': '#000',
           'bulletsColor': '#000',
@@ -25,12 +26,14 @@ $(document).ready(function() {
       },
 
       //events
-      onLeave: function(index, nextIndex, direction){},
-      afterLoad: function(anchorLink, index){},
-      afterRender: function(){},
-  });
-  $('#pagepiling').pagepiling({
-      sectionsColor: ['#fff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#fff'],
+      
+      
+      afterRender: function(anchorLink, index){
+        NavbarVisible();
+      },
+      afterLoad: function(anchorLink, index){
+        NavbarVisible();
+      }
   });
     // End
 });
@@ -42,7 +45,7 @@ $(document).ready(function() {
         infinite: true,
         speed: 1000,
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow:"<div class='slick-prev'><i class='fas fa-angle-left' ></i></div>",
             nextArrow:"<div class='slick-next'><i class='fas fa-angle-right'></i></div>",
@@ -75,8 +78,26 @@ $(document).ready(function() {
     
 });
 
-new WOW().init();
+//navbar active deactive function
+function NavbarVisible () {
+  if($('.pp-section.active').hasClass('navbar-is-visible')) {
+      $('.main_menu').addClass('navbar-visible');
+
+  }
+
+  else{
+      $('.main_menu').removeClass('navbar-visible');
+  }
+}
+
+
+//wow
+// new WOW().init();
 
 new VenoBox({
-  selector: ".my-link"
+  selector: '.my-image-links',
+  numeration: true,
+  infinigall: true,
+  share: true,
+  spinner: 'rotating-plane',
 });

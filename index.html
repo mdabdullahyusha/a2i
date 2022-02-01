@@ -20,6 +20,10 @@
             
             <!-- Animate CSS -->
             <link rel="stylesheet" href="./assets/css/animate.min.css">
+            <link rel="stylesheet" href="./assets/css/slick-theme.css">
+            
+            <!-- Animate CSS -->
+            <link rel="stylesheet" href="./assets/css/venobox.css">
             
             <!-- WebFonts -->
             <link rel="stylesheet" href="./assets/css/fonts.css">
@@ -45,6 +49,36 @@
         <title>A2I Project</title>
     </head>
     <body>
+        <div class="main_menu position-fixed top-0 w-100">
+            <!-- Partner's Header Part Start -->
+            <header class="partner__header">
+                <div class="container">
+                    <nav class="navigation py-2">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="logo">
+                                    <a href="#"><img src="./assets/img/short_logo.png" alt="A2I LOGO" class="d-inline-block"></a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <ul class="menu justify-content-center">
+                                    <li><a class="nav-link" href="#">About</a></li>
+                                    <li><a class="nav-link" href="#">Resourses</a></li>
+                                    <li><a class="nav-link" href="#">Career</a></li>
+                                    <li><a class="nav-link" href="#">Tenders</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-2 m-auto">
+                                <div class="collapse__bar float-end">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- Partner's Header Part End -->
+        </div>
         <main>
             <!-- <header class="partner__header">
                 <div class="container">
@@ -73,26 +107,31 @@
                 </div>
             </header> -->
             <section class="pheader_part" id="pagepiling">
-                <div class="section hero_part pp-scrollable" id="section1">
+                <div class="section hero_part pp-scrollable " id="section1">
                     <div class="section-wrap">
                         <section class="slider_part">
                             <div class="container">
                                 <div class="slider__con__main">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="slider__con text-center">
-                                                <img src="./assets/img/short_logo.png" alt="">
-                                                <h1 class="py-4">WELCOME TO a2i</h1>
+                                    <div class="row h-100">
+                                        <div class="col-6 h-100">
+                                            <div class="slider__con text-center d-flex align-items-end h-100">
+                                                <div class="slider__con__wrap">
+                                                    <div class="banner_image d-lg-none">
+                                                        <img src="./assets/img/short_logo.png" alt="">
+                                                    </div>
+
+                                                <h1 class="py-4 welcome_to_a2i">WELCOME TO a2i</h1>
                                                 <h3 class="pb-2">SIMPLIFYING GOVERNMENT</h3>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit dignissimos voluptatem ullam, rem.</p>
                                                 <div class="d-flex justify-content-center mt-3">
                                                     <div class="line"></div>
                                                 </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="slider__con__img pt-3">
-                                                <div class="__img __img__1">
+                                                <!-- <div class="__img __img__1">
                                                     <img src="./assets/img/slider_img_01.jpg" alt="">
                                                 </div>
                                                 <div class="__img __img__2">
@@ -100,7 +139,8 @@
                                                 </div>
                                                 <div class="__img __img__3">
                                                     <img src="./assets/img/slider_img_01.jpg" alt="">
-                                                </div>
+                                                </div> -->
+                                                <img src="./assets/img/main_img.png" class="img-fluid w-100" alt="">
                                                 <div class="contact_icon">
                                                     <ul>
                                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -122,174 +162,373 @@
                         </section>
                     </div>
                 </div>
-                <div class="section pp-scrollable" id="section2"></div>
-                <div class="section pp-scrollable" id="section3"></div>
-                <div class="section pp-scrollable" id="section4"></div>
-                <div class="section pp-scrollable" id="section5">
-                    <main>
-                    <!-- Partner's Header Part Start -->
-                        <header class="partner__header">
-                            <div class="container">
-                                <nav class="navigation py-2">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div class="logo">
-                                                <a href="#"><img src="./assets/img/short_logo.png" alt="A2I LOGO"></a>
+                <div class="section pp-scrollable navbar-is-visible" id="section2">
+                    <!-- TCV Save Part Start -->
+                    <section class="tcv_part">
+                        <div class="container">
+                            <div class="tcv__con__main">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="line mb-3"></div>
+                                        </div>
+                                        <div class="tcv__img__main">
+                                            <div class="tcv__img">
+                                                <img src="./assets/img/tcv_img_02.jpg" class="img-fluid w-100">
+                                                    <div class="tcv__img__overlay">
+                                                        <a class="my-image-links" data-gall="gallery01" href="./assets/img/bd.jpg">VIEW NOW <i class="fas fa-arrow-right"></i></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="tcv__img__02">
+                                                <img src="./assets/img/tcv_img_01.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="tcv__img__03">
+                                                <img src="./assets/img/bg_a.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
-                                        <div class="col-6 m-auto">
-                                            <ul class="menu d-flex justify-content-center">
-                                                <li><a class="nav-link" href="#">About</a></li>
-                                                <li><a class="nav-link" href="#">Resourses</a></li>
-                                                <li><a class="nav-link" href="#">Career</a></li>
-                                                <li><a class="nav-link" href="#">Tenders</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-2 m-auto">
-                                            <div class="collapse__bar float-end">
-                                                <i class="fas fa-bars"></i>
-                                            </div>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="line mt-3"></div>
                                         </div>
                                     </div>
-                                </nav>
+                                    <div class="col-7">
+                                        <div class="tcv__head">
+                                            <h3>TCV Saved</h3>
+                                        </div>
+                                        <div class="tcv__column__timing">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="tcv__column__timing__con text-center">
+                                                        <img src="./assets/img/timg_column_01.png" alt="">
+                                                        <h4>Time 77%</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="tcv__column__timing__con text-center">
+                                                        <img src="./assets/img/timing_column_02.png" alt="">
+                                                        <h4>Cost 75%</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="tcv__column__timing__con text-center">
+                                                        <img src="./assets/img/timing_column_03.png" alt="">
+                                                        <h4>Time 87%</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tcv__loading__con__main">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="tcv__loading__con">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div class="proggress__bar">
+                                                                    <img src="./assets/img/progress.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h4>4.09 +</h4>
+                                                                <p>Billion Service Deliverd</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="tcv__loading__con">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div class="proggress__bar">
+                                                                    <img src="./assets/img/progress.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h4>4.09 +</h4>
+                                                                <p>Billion Service Deliverd</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pt-4">
+                                                    <div class="tcv__loading__con">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div class="proggress__bar">
+                                                                    <img src="./assets/img/progress.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h4>4.09 +</h4>
+                                                                <p>Billion Service Deliverd</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pt-4">
+                                                    <div class="tcv__loading__con">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div class="proggress__bar">
+                                                                    <img src="./assets/img/progress.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h4>4.09 +</h4>
+                                                                <p>Billion Service Deliverd</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#" class="tcv__btn">Read More <i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="page__number">
+                                    <p>02/05</p>
+                                    <div class="page__line"></div>
+                                </div>
                             </div>
-                        </header>
-                        <!-- Partner's Header Part End -->
-                
-                        <!-- Partner's Section Start -->
-                        <section class="partners__sec">
-                            <div class="container">
+                        </div>
+                    </section>
+                    <!-- TCV Save Part End -->
+                </div>
+                <div class="section pp-scrollable navbar-is-visible" id="section3">
+                    <section class="about__part">
+                        <div class="container">
+                            <div class="about__con_main">
                                 <div class="row">
-                                    <div class="col-9 offset-3">
-                                        <div class="partners__con py-5">
-                                            <h3>PARTNERS</h3>
-                                            <P class="py-3">We Work With Best Partners</P>
-                                            <div class="divider mb-3">
+                                    <div class="col-5">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="line mb-3"></div>
+                                        </div>
+                                        <div class="about__img__main">
+                                            <div class="about__img about__img__01">
+                                                <img src="./assets/img/bg_a.png" alt="">
+                                            </div>
+                                            <div class="about__img about__img__02">
+                                                <img src="./assets/img/tcv_img_01.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="about__img about__img__03">
+                                                <img src="./assets/img/tcv_img_01.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="about__img about__img__04">
+                                                <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="line mt-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="about__con">
+                                            <h3>About</h3>
+                                            <p>We strive to unfold the true potential within the government to create remarkable innovations that can ease and improve the lives of citizens. As the flagship programme of the Digital Bangladesh agenda, we hope to inspire developing and developed nations on public service innovation and transformation by sharing our groundbreaking insights supported by examples, lessons, and knowledge</p>
+                                            <div class="divider my-3">
                                                 <div class="div_01"></div>
                                                 <div class="div_02"></div>
                                                 <div class="div_03"></div>
                                             </div>
-                                            <div class="partner__img__main py-3">
-                                                <div class="row slick__slider">
-                                                    <div class="col-3">
-                                                        <div class="partner__img">
-                                                            <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="partner__img">
-                                                            <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="partner__img">
-                                                            <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="partner__img">
-                                                            <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="partner__img">
-                                                            <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="">
+                                                <a href="#" class="tcv__btn">Read More <i class="fas fa-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-9 ms-auto">
-                                        <div class="partners__info__head">
-                                            <h3>Lorem ipsum dolor sit amet.</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="partners_info_main">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="partners_info">
-                                                <div class="partner__info__img">
-                                                    <img src="./assets/img/partners_info_01.jpg" class="img-fluid w-100" alt="">
-                                                </div>
-                                                <div class="partners__info__inner text-center">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <a href="#" class="btn pt-4">Read More <i class="fas fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="partners_info">
-                                                <div class="partner__info__img">
-                                                    <img src="./assets/img/partners_info_01.jpg" class="img-fluid w-100" alt="">
-                                                </div>
-                                                <div class="partners__info__inner text-center">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <a href="#" class="btn pt-4">Read More <i class="fas fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="text-center btn partners__info__btn">See More <i class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- Partner's Section End -->
+                        </div>
+                    </section>
+                </div>
+                <div class="section pp-scrollable navbar-is-visible" id="section4">
+                    <!-- Transform Part Start -->
+                    <section class="transform__part">
+                        <div class="container">
+                            <div class="transform_con_main">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="transform__img__con d-flex align-items-center float-end">
+                                            <div class="transform__img">
+                                                <img src="./assets/img/short_logo.png" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="transform__img__line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 text-center">
+                                        <div class="transform__con text-center">
+                                            <h3>HOW WE TRANSFORM BANGLADESH</h3>
+                                            <div class="transform__con__btn__main pt-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#" class="transform__con__btn">Digital Equity</a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#" class="transform__con__btn">Rearchitecting Government</a>
+                                                    </div>
+                                                </div>
 
-                        <section class="contact__part">
-                            <div class="container">
-                                <div class="contact__part__main">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div class="contact__part__logo">
-                                                <img src="./assets/img/short_logo.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="contact__part__menus">
-                                                <ul>
-                                                    <li><a href="#">About</a></li>
-                                                    <li><a href="#">Team</a></li>
-                                                    <li><a href="#">Event</a></li>
-                                                    <li><a href="#">Contact us</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="contact__part__menus">
-                                                <ul>
-                                                    <li><a href="#">Career</a></li>
-                                                    <li><a href="#">Photo & Videos</a></li>
-                                                    <li><a href="#">Blogs</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="contact__part__contact">
-                                                <h2>info@a2i.gov.bd</h2>
-                                                <p class="py-2">a2i Office at Bangladesh Bureau of Statistics (BBS) Bhaban</p>
-                                                <div class="icon float-end">
-                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                                <div class="row py-5">
+                                                    <div class="col-4">
+                                                        <a href="#" class="transform__con__btn">DFS</a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="transform__con__btn">Future of Work</a>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <a href="#" class="transform__con__btn">Future of Learning</a>
+                                                    </div>
                                                 </div>
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#" class="transform__con__btn">Data-Driven Policymaking</a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#" class="transform__con__btn">South South Cooperation</a>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-
-                        <footer class="footer__part">
-                            <div class="container">
-                                <div class="d-flex justify-content-between">
-                                    <p>&copy; 2022 a2i. All Rights Reserved.</p>
-                                    <p>Designed by: <a href="#">Riseup Labs</a></p>
+                        </div>
+                    </section>
+                    <!-- Transform Part End -->
+                </div>
+                <div class="section pp-scrollable navbar-is-visible" id="section5">
+                        <!-- Partner's Section Start -->
+                    <section class="partners__sec">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9 offset-3">
+                                    <div class="partners__con py-5">
+                                        <h3>PARTNERS</h3>
+                                        <P class="py-3">We Work With Best Partners</P>
+                                        <div class="divider mb-3">
+                                            <div class="div_01"></div>
+                                            <div class="div_02"></div>
+                                            <div class="div_03"></div>
+                                        </div>
+                                        <div class="partner__img__main py-3">
+                                            <div class="row slick__slider">
+                                                <div class="col-3">
+                                                    <div class="partner__img">
+                                                        <img src="./assets/img/partner_01.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="partner__img">
+                                                        <img src="./assets/img/partner_02.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="partner__img">
+                                                        <img src="./assets/img/partner_03.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="partner__img">
+                                                        <img src="./assets/img/partner_04.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9 ms-auto">
+                                    <div class="partners__info__head">
+                                        <h3>Lorem ipsum dolor sit amet.</h3>
+                                    </div>
                                 </div>
                             </div>
-                        </footer>
-                    </main>
+                            <div class="partners_info_main">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="partners_info">
+                                            <div class="partner__info__img">
+                                                <img src="./assets/img/partners_info_01.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="partners__info__inner text-center">
+                                                <h4>Lorem ipsum dolor sit amet</h4>
+                                                <a href="#" class="btn pt-4">Read More <i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="partners_info">
+                                            <div class="partner__info__img">
+                                                <img src="./assets/img/partners_info_01.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="partners__info__inner text-center">
+                                                <h4>Lorem ipsum dolor sit amet</h4>
+                                                <a href="#" class="btn pt-4">Read More <i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-center btn partners__info__btn">See More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Partner's Section End -->
+
+                    <section class="contact__part">
+                        <div class="container">
+                            <div class="contact__part__main">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="contact__part__logo">
+                                            <img src="./assets/img/short_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="contact__part__menus">
+                                            <ul>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Team</a></li>
+                                                <li><a href="#">Event</a></li>
+                                                <li><a href="#">Contact us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="contact__part__menus">
+                                            <ul>
+                                                <li><a href="#">Career</a></li>
+                                                <li><a href="#">Photo & Videos</a></li>
+                                                <li><a href="#">Blogs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="contact__part__contact">
+                                            <h2>info@a2i.gov.bd</h2>
+                                            <p class="py-2">a2i Office at Bangladesh Bureau of Statistics (BBS) Bhaban</p>
+                                            <div class="icon float-end">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer class="footer__part">
+                        <div class="container">
+                            <div class="d-flex justify-content-between">
+                                <p>&copy; 2022 a2i. All Rights Reserved.</p>
+                                <p>Designed by: <a href="#">Riseup Labs</a></p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </section>
         </main>
@@ -307,6 +546,9 @@
         
         <!-- Slick -->
         <script src="./assets/js/slick.min.js"></script>
+        
+        <!-- Slick -->
+        <script src="./assets/js/venobox.min.js"></script>
         
         <!-- Own JS -->
         <script src="./assets/js/app.js"></script>

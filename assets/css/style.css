@@ -5,7 +5,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: 'Karla', sans-serif;
 }
 ul, ol {
 	margin: 0;
@@ -23,14 +24,25 @@ h1, h2, h3, h4, h5, h6, p, span {
 	margin: 0;
 	padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8ED218;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
 /* ----------------------------------------------------------------------------
 ----------------------------- Universal CSS End ---------------------------- */
-.slider_part {
-	background: url(../img/1.jpg)no-repeat;
-	background-size: 95% 100%;
-	/* background-position: top; */
-	/* position: relative; */
+
+.slider__con__main {
+	height: 100vh;
 }
+
 .slider__con h1 {
 	font-size: 60px;
 	color: #0A9444;
@@ -45,12 +57,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	display: none;
 }
 
-.slider__con {
-	padding-top: 60px;
-}
 .line {
 	width: 3px;
-	height: 120px;
+	height: 150px;
 	background: #0F6936;
 }
 
@@ -128,6 +137,16 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* ----------------------------------------------------------------------------
 ----------------------------- Partner Part Start --------------------------- */
 
+.main_menu {
+	z-index: 99;
+	background: transparent;
+	transition: .3s;
+}
+.main_menu.navbar-visible:hover {
+	visibility: visible;
+	opacity: 1;
+	background: white;
+}
 .header_part {
 	background: #fff;
 	box-shadow: 0 0 10px -8px rgba(0,0,0,0.75);
@@ -142,6 +161,37 @@ h1, h2, h3, h4, h5, h6, p, span {
 .nav__bar {
 	display: flex;
 }
+
+.menu {
+	display: none;
+}
+
+.main_menu.navbar-visible .menu {
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s;
+}
+
+.main_menu.navbar-visible:hover .menu {
+	display: flex;
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu li {
+	position: relative;
+	left: 10px;
+	transition: .3s;
+	transform: scale(1.4);
+}
+
+.main_menu.navbar-visible:hover .menu li {
+	left: 0;
+	transform: scale(1);
+	transform-origin: center center;
+}
+
 .menu li a {
 	color: #000;
 	padding: 0 35px;
@@ -237,6 +287,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .partners__info__btn:hover {
 	color: #fff;
+}
+/* the slides */
+.slick-slide {
+    margin: 0 18px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -18px;
 }
 /* ----------------------------------------------------------------------------
 ----------------------------- Partner Part End --------------------------- */
@@ -962,5 +1020,196 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #fff;
 	margin: 0 10px;
 }
+.social_icons__part {
+	height: 100vh;
+	position: relative;
+}
+.social_icons {
+	position: absolute;
+	bottom: 10%;
+	right: 50%;
+} 
+.social_icons a {
+	color: #0A9444;
+	font-size: 18px;
+}
+.social__icon__logo img{
+	padding-top: 150px;
+}
 /* ----------------------------------------------------------------------------
 ------------------------ SideMenu Part End ------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------------------------
+------------------------ Innovation Page Start ----------------------------- */
+.innovation__part {
+	padding-top: 150px;
+}
+.innovation__head h3 {
+	font-size: 40px;
+	color: #0A9444;
+	font-weight: 800;
+	padding: 20px 0;
+}
+.innovation__con__wrap {
+	padding: 0 0 150px;
+}
+.innovation__con__img {
+	position: relative;
+}
+.innovation__con {
+	width: 90%;
+	/* margin: -25px auto 0; */
+	background: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	box-shadow: 0 0 15px -8px #000;
+}
+.innovation__con h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 30px;
+}
+.innovation__con a {
+	font-size: 18px;
+	color: #922790;
+	font-weight: 600;
+}
+/* ----------------------------------------------------------------------------
+------------------------ Innovation Page End ------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------
+------------------------ TCV Page Part Start ------------------------------- */
+.tcv__part {
+	padding: 150px 0 80px;
+}
+.tcv__column__timing.tcv__page {
+	box-shadow: none;
+}
+.tcv__hero__con {
+	padding-top: 50px;
+}
+.tcv__hero__con h2 {
+	font-size: 40px;
+	color: #0A9444;
+	font-weight: 800;
+}
+
+.tcv__tool {
+	padding: 60px 0;
+	background: #FAFBFA;
+}
+.tcv__icon {
+	background: #fff;
+	padding: 45px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px -5px #000;
+}
+.tcv__con h2{
+	font-size: 80px;
+	color: #0A9444;
+	font-weight: 700;
+}
+.tcv__con h5{
+	font-weight: 700;
+}
+.subscribe__part {
+	padding: 80px 0;
+	background: url(../img/subscribe_img.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.subscribe__con {
+	font-size: 40px;
+	color: #fff;
+	font-weight: 800;
+	padding: 0 80px;
+	text-shadow: 0 0 10px -7px #000;
+}
+.tcv__tool.part__2 {
+	background: #fff;
+}
+/* ----------------------------------------------------------------------------
+------------------------ TCV Page Part End --------------------------------- */
+
+
+/* ----------------------------------------------------------------------------
+------------------------ Blogs Page Start --------------------------------- */
+.hero__part {
+	/* position: relative; */
+}
+.hero__con {
+	background: #fff;
+	padding: 50px 20px 10px;
+	margin-top: -160px;
+}
+.hero__con.__most {
+	width: 80%;
+	background: #fff;
+	z-index: 999;
+	margin: -50px;
+	padding: 15px;
+	position: relative;
+}
+.publish__info__con {
+	padding-left: 15px;
+}
+.publish__btn {
+	height: 30px;
+	width: 120px;
+	background: #922790;
+	border-radius: 30px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.publish__btn:hover {
+	color: #fff;
+}
+.most__popular__con {
+	padding: 15px 0 80px;
+}
+.top__publications__btn__main {
+	padding: 30px 0;
+}
+.top__publications__btn__main ul li a {
+	display: block;
+	padding: 0 15px;
+}
+.hero__con.publish__con {
+	margin: 0 0 30px;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -7px #000;
+}
+.search__bar__con {
+	padding: 10px;
+	background: #FAFBFA;
+	border-radius: 10px;
+}
+.blogs__form {
+	position: relative;
+}
+.search__btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* margin-left: 30px; */
+	font-size: 22px;
+	color: #787878;
+	padding: 4px 10px;
+	font-weight: 300;
+}
+.search__bar__con ul {
+	list-style-type: "🦄";
+}
+/* ----------------------------------------------------------------------------
+------------------------ Blogs Page Start --------------------------------- */
