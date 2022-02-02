@@ -49,8 +49,8 @@ $(document).ready(function() {
         autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow:"<div class='slick-prev'><i class='fas fa-angle-left' ></i></div>",
-            nextArrow:"<div class='slick-next'><i class='fas fa-angle-right'></i></div>",
+        nextArrow: '.next__icon',
+        prevArrow: '.prev__icon' ,
         responsive: [
           {
             breakpoint: 1024,
@@ -107,7 +107,9 @@ $(function(){
   $('#sidenav_button').on('click', function(){
     $('.sidemenu__part').toggleClass('onScreen');
     if($('.sidemenu__part').hasClass('onScreen')) {
-      $('.collapse__bar').html('<i class="fas fa-times"></i>')
+      $('.collapse__bar').html('<i class="fas fa-times"></i>');
+      $('.non_index').removeClass('position-relative');
+      $('.non_index').addClass('position-fixed');
 
       //menu css
       $('.logo').css({'visibility':'hidden', 'opacity': '0'});
@@ -116,6 +118,8 @@ $(function(){
     }
     else {
       $('.collapse__bar').html('<i class="fas fa-bars"></i>');
+      $('.non_index').removeClass('position-fixed');
+      $('.non_index').addClass('position-relative');
 
     //menu css
     $('.logo').removeAttr('style');
@@ -127,6 +131,8 @@ $(function(){
   //check on load if side menu is active
   if($('.sidemenu__part').hasClass('onScreen')) {
     $('.collapse__bar').html('<i class="fas fa-times"></i>');
+    $('.non_index').removeClass('position-relative');
+    $('.non_index').addClass('position-fixed');
 
           //menu css
           $('.logo').css({'visibility':'hidden', 'opacity': '0'});
@@ -135,6 +141,8 @@ $(function(){
   }
   else {
     $('.collapse__bar').html('<i class="fas fa-bars"></i>');
+    $('.non_index').removeClass('position-fixed');
+    $('.non_index').addClass('position-relative');
 
     //menu css
     $('.logo').removeAttr('style');

@@ -38,53 +38,99 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 /* ----------------------------------------------------------------------------
 ----------------------------- Universal CSS End ---------------------------- */
-
+.banner_image img{
+	width: 120px;
+}
 .slider__con__main {
 	height: 100vh;
 }
-
 .slider__con h1 {
-	font-size: 60px;
+	font-size: 46px;
 	color: #0A9444;
 	font-weight: 700;
+	padding: 15px 0;
 }
 .slider__con h3 {
-	font-size: 38px;
+	font-size: 34px;
 	color: #0A9444;
-	font-weight: 600;
+	font-weight: 700;
+	letter-spacing: 2;
 }
+.slider__con p {
+	text-align: left;
+	font-size: 16px;
+}
+
 #pp-nav {
 	display: none;
 }
 
 .line {
-	width: 3px;
-	height: 150px;
+	width: 2px;
+	height: 140px;
 	background: #0F6936;
+	margin-top: 30px;
 }
+
+
+.slider__position__img__main {
+	position: relative;
+}
+.big__a__b img {
+	width: 270px;
+}
+.positioned__img__01 {
+	height: auto;
+	width: 160px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 15px -10px #000;
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
+.positioned__img__01 img {
+	border-radius: 15px;
+}
+.positioned__img__02 img {
+	border-radius: 15px;
+}
+.positioned__img__03 img {
+	border-radius: 15px;
+}
+.positioned__img__02 {
+	height: auto;
+	width: 160px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 15px -10px #000;
+	position: absolute;
+	bottom: 5%;
+	left: 55%;
+	transform: translateX(-50%);
+}
+.positioned__img__03 {
+	height: auto;
+	width: 160px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 15px -10px #000;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+	/* transform: translateX(-50%); */
+}
+
+
+
 
 .slider__con__img .__img{
 	border-radius: 15px;
 }
 .slider__con__img {
-	position: relative;
+	/* position: relative; */
 	width: 100%;
-	height: 500px;
-}
-.slider__con__img .__img__1{
-	position: absolute;
-	top: 10%;
-	left: 0;
-}
-.slider__con__img .__img__2{
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-.slider__con__img .__img__3 {
-	position: absolute;
-	bottom: 0;
-	left: 40%;
+	/* height: 100vh; */
 }
 .slider__con__img .__img img {
 	height: 220px;
@@ -100,7 +146,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .contact_icon {
 	position: absolute;
-	bottom: 0;
+	bottom: 5%;
 	right: 0;
 }
 .scroll__animate,
@@ -156,7 +202,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	z-index: 111;
 }
 .logo img{
-	width: 120px;
+	width: 80px;
 }
 
 .main_menu.navbar-visible .logo {
@@ -225,7 +271,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	width: 35px;
 	border-radius: 50%;
 	color: #fff;
-	background: teal;
+	background: #0A9444;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -244,6 +290,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 } */
 .divider {
 	display: flex;
+	padding-top: 60px;
 }
 .divider > .div_01,
 .divider > .div_02,
@@ -253,27 +300,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: teal;
 	margin: 0 3px;
 }
-.slick-next,
-.slick-prev {
-	height: 65px;
-	width: 65px;
-	text-align: center;
-	line-height: 25px;
-	color: #f00;
-	position: absolute;
-	bottom: 0 !important;
-	right: 0;
-	padding-top: 10px;
-}
-.slick-prev {
-	right: 0 !important;
-}
-.slick-next::before,
-.slick-prev::before {
-	opacity: 1;
-	color: #f00;
-	font-size: 30px;
-}
+
 .partners__info__head {
 	padding: 60px 0;
 }
@@ -304,6 +331,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-weight: 600;
 	margin: auto;
 	margin-bottom: 100px;
+	line-height: 45px;
 }
 .partners__info__btn:hover {
 	color: #fff;
@@ -315,6 +343,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* the parent */
 .slick-list {
     margin: 0 -18px;
+}
+.next__prev__icon i{
+	font-size: 28px;
+	color: #922790;
 }
 /* ----------------------------------------------------------------------------
 ----------------------------- Partner Part End --------------------------- */
@@ -360,6 +392,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 /* ----------------------------------------------------------------------------
 ------------------------------ TCV Part Start ------------------------------ */
+.line.__tcv {
+	margin-top: 0;
+}
 .tcv__img {
 	position: relative;
 	width: 250px;
@@ -400,7 +435,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .tcv__column__timing {
 	padding: 15px;
-	box-shadow: 0 0 5px -1px #000;
+	box-shadow: 0 0 15px -12px #000;
 }
 .tcv__loading__con__main {
 	padding: 30px 0;
@@ -415,7 +450,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	border: 2px solid #0A9444;
 }
 .proggress__bar img {
-	width: 35px;
+	width: 30px;
 }
 .tcv__btn {
 	width: 250px;
@@ -426,7 +461,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	line-height: 50px;
 	border-radius: 30px;
 	color: #fff;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 .tcv__btn:hover {
 	color: #fff;
@@ -457,6 +492,21 @@ h1, h2, h3, h4, h5, h6, p, span {
 .page_count.page__number {
 	right: 0;
 } 
+
+.tcv__column__timing__con i {
+	font-size: 48px;
+	color: #0A9444;
+	padding-bottom: 10px;
+
+}
+.tcv__column__timing__con h4 span {
+	color: #0A9444;
+}
+.tcv__loading__con h4 {
+	font-size: 48px;
+	color: #0A9444;
+	font-weight: 700;
+}
 /* ----------------------------------------------------------------------------
 ------------------------------ TCV Part End -------------------------------- */
 
@@ -509,7 +559,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	width: 80px !important;
 }
 .about__con {
-	padding-top: 150px;
+	padding-top: 220px;
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ About Part End ------------------------------ */
@@ -535,7 +585,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	align-items: center;
 }
 .transform__img img{
-	width: 100px !important;
+	width: 80px !important;
 }
 .transform__img__line {
 	height: 3px;
@@ -1088,7 +1138,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 18px;
 }
 .social__icon__logo img{
-	padding-top: 150px;
+	padding-top: 100px;
 }
 /* ----------------------------------------------------------------------------
 ------------------------ SideMenu Part End ------------------------------- */
@@ -1747,3 +1797,70 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 /* ----------------------------------------------------------------------------
 ---------------------------- Opportunities Page End ----------------------- */
+
+
+/* ----------------------------------------------------------------------------
+---------------------------- Career Role View Page Start ------------------- */
+.role__view__btn a {
+	height: 40px;
+	width: 170px;
+	background: #922790;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	box-shadow: 0 0 10px -6px #000;
+	margin: 50px 10px 30px 0;
+}
+.role__view__btn a:hover {
+	background: #fff;
+	color: #000;
+}
+.tcv__part.__role {
+	padding: 0;
+}
+.role__view__con p, 
+.role__view__con li{
+	font-size: 18px;
+	color: #000;
+}
+.role__view__con h3 {
+	font-size: 28px;
+	color: #0A9444;
+	font-weight: 800;
+} 
+/* ----------------------------------------------------------------------------
+---------------------------- Career Role View Page End ------------------- */
+
+
+/* ----------------------------------------------------------------------------
+---------------------------- Career Details Part Start ------------------- */
+.personal__details__con h3 {
+	font-size: 34px;
+	color: #0A9444;
+	font-weight: 700;
+}
+.personal__details__con label span {
+	color: #0F6936;
+}
+.personal__details__con button {
+	display: inline-block;
+	height: 45px;
+	width: 220px;
+	background: #922790;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+}
+.personal__details__con button:hover {
+	background: #922790;
+}
+
+/* ----------------------------------------------------------------------------
+---------------------------- Career Details Part End ------------------- */
