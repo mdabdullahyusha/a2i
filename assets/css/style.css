@@ -185,6 +185,19 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 14px;
 	color: #0A9444;
 }
+.contact__part__logo img {
+	max-width: 150px;
+}
+.contact__part__contact .icon{
+	display: flex;
+	justify-content: end;
+}
+.contact__part__menus ul li a {
+	transition: .3s;
+}
+.contact__part__menus ul li a:hover {
+	color: #0a9444;
+}
 /* ----------------------------------------------------------------------------
 ----------------------------- Partner Part Start --------------------------- */
 
@@ -1289,11 +1302,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #fff;
 	padding: 50px 20px 10px;
 	margin-top: -160px;
+	box-shadow: 0 0 10px -6px #000;
 }
 .hero__con.__most {
 	width: 80%;
 	background: #fff;
-	z-index: 999;
+	z-index: 1;
 	margin: -50px;
 	padding: 15px;
 	position: relative;
@@ -1313,6 +1327,11 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .publish__btn:hover {
 	color: #fff;
+}
+.most__popular__head h3 {
+	font-size: 32px;
+	color: #0A9444;
+	font-weight: 700;
 }
 .most__popular__con {
 	padding: 15px 0 80px;
@@ -1390,7 +1409,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	bottom: 0;
 	left: 0;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: end;
 	padding: 30px;
 }
@@ -1402,7 +1421,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .publish__info__con h6, 
 .publish__info__con p {
 	font-size: 16px;
-	color: #fff;
+	color: #000;
 }
 
 .social__react__con span {

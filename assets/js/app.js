@@ -77,6 +77,11 @@ $(document).ready(function() {
         },
         ]});
     // End
+    $('.isotope').isotope({
+      // options
+      itemSelector: '.grid-item',
+      layoutMode: 'fitRows'
+    });
     
 });
 

@@ -30,12 +30,13 @@
 
             <!-- Own CSS -->
             <link rel="stylesheet" href="./assets/css/style.css">
+            <link rel="stylesheet" href="./assets/css/responsive.css">
 
         <title>A2I Blogs</title>
     </head>
     <body>
         <main>
-            <div class="main_menu position-relative top-0 w-100">
+            <div class="main_menu non_index position-relative top-0 w-100">
                 <!-- Partner's Header Part Start -->
                 <header class="partner__header">
                     <div class="container">
@@ -65,7 +66,7 @@
                 </header>
                 <!-- Partner's Header Part End -->
             </div>
-    
+
             <!--main side menu start-->
             <section class="sidemenu__part">
                 <div class="container-fluid mx-0 px-0">
@@ -181,7 +182,7 @@
                     <div class="bread__crumb">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item">Blogs</li>
                             </ol>
                         </nav>
@@ -191,17 +192,27 @@
                         <div class="blog__detail__img">
                             <img src="./assets/img/blog_detail_hero.jpg" class="img-fluid w-100" alt="">
                             <div class="blog__detail__img__overlay">
-                                <h3>An adaptive national system: what can be done<br> to help  the people of Bangladesh navigate future jobs and skills?</h3>
-                                <div class="publish__info d-flex align-items-center justify-content-around">
-                                    <div class="publish__img">
-                                        <img src="./assets/img/publisher.png"  alt="">
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="blog__detail__con__wrap">
+                                            <h3>An adaptive national system: what can be done to help  the people of Bangladesh navigate future jobs and skills?</h3>
+                                            
+                                        </div>
                                     </div>
-                                    <div class="publish__info__con">
-                                        <h6>Anis Rahman</h6>
-                                        <p>01, January 2022</p>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="publish__info d-flex align-items-center justify-content-end">
+                                            <div class="publish__img">
+                                                <img src="./assets/img/publisher.png"  alt="">
+                                            </div>
+                                            <div class="publish__info__con">
+                                                <h6>Anis Rahman</h6>
+                                                <p>01, January 2022</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -280,12 +291,12 @@
                                 <div class="comment__con__main">
                                     <div class="comment__con mb-4">
                                         <div class="row">
-                                            <div class="col-2">
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                                                 <div class="comment__img">
                                                     <img src="./assets/img/comment__img.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="col-8">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                                                 <div class="comment__con__wrap">
                                                     <p>Mir Safayet Rahman</p>
                                                     <p>
@@ -296,7 +307,7 @@
                                                     <a href="#">Replay</a>
                                                 </div>
                                             </div>
-                                            <div class="col-2">
+                                            <div class="col-2 d_res_none">
                                                 <a href="#" class=" float-end">
                                                     <i class="far fa-heart"></i>
                                                 </a>
@@ -306,12 +317,12 @@
                                     
                                     <div class="comment__con part__2">
                                         <div class="row">
-                                            <div class="col-2">
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                                                 <div class="comment__img">
                                                     <img src="./assets/img/comment__img.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="col-8">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                                                 <div class="comment__con__wrap">
                                                     <p>Mir Safayet Rahman</p>
                                                     <p>
@@ -322,7 +333,7 @@
                                                     <a href="#">Replay</a>
                                                 </div>
                                             </div>
-                                            <div class="col-2">
+                                            <div class="col-2 d_res_none">
                                                 <a href="#" class=" float-end">
                                                     <i class="far fa-heart"></i>
                                                 </a>
@@ -435,10 +446,12 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="blog__details__logo d-flex justify-content-center mb-4">
-                                <img src="./assets/img/short_logo.png" alt="">
-                            </div>
+                            <span class="d_res_none">
+                                <div class="blog__details__logo d-flex justify-content-center mb-4">
+                                    <img src="./assets/img/short_logo.png" alt="">
+                                </div>
+                            </span>
+                            
                         </div>
                     </div>
                 </div>
@@ -485,15 +498,15 @@
 
             <!-- Contact Part Start -->
             <section class="contact__part">
-                <div class="container">
+                <div class="container-lg">
                     <div class="contact__part__main">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-3">
                                 <div class="contact__part__logo">
                                     <img src="./assets/img/short_logo.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 col-3">
                                 <div class="contact__part__menus">
                                     <ul>
                                         <li><a href="#">About</a></li>
@@ -503,7 +516,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 col-3">
                                 <div class="contact__part__menus">
                                     <ul>
                                         <li><a href="#">Career</a></li>
@@ -512,11 +525,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-3">
                                 <div class="contact__part__contact">
                                     <h2>info@a2i.gov.bd</h2>
                                     <p class="py-2">a2i Office at Bangladesh Bureau of Statistics (BBS) Bhaban</p>
-                                    <div class="icon float-end">
+                                    <div class="icon">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                         <a href="#"><i class="fab fa-youtube"></i></a>
@@ -529,14 +542,12 @@
             </section>
             <!-- Contact Part End -->
 
-            
-
             <!-- Footer Part STart -->
             <footer class="footer__part">
                 <div class="container">
                     <div class="d-flex justify-content-between">
                         <p>&copy; 2022 a2i. All Rights Reserved.</p>
-                        <p>Designed by: <a href="#">Riseup Labs</a></p>
+                        <p>Designed by: <a href="https://www.uysys.com/" target="_blank">Uy Systems.</a></p>
                     </div>
                 </div>
             </footer>
