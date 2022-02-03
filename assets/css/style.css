@@ -304,6 +304,11 @@ h1, h2, h3, h4, h5, h6, p, span {
 .partners__info__head {
 	padding: 60px 0;
 }
+.partners__info__head h3 {
+	font-size: 32px;
+	color: #0A9444;
+	font-weight: 700;
+}
 .partners__info__inner {
 	max-width: 80%;
 	background: #fff;
@@ -503,7 +508,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 	color: #0A9444;
 }
 .tcv__loading__con h4 {
-	font-size: 48px;
+	font-size: 40
+	px;
 	color: #0A9444;
 	font-weight: 700;
 }
@@ -1108,6 +1114,23 @@ h1, h2, h3, h4, h5, h6, p, span {
 .menus ul li a {
 	font-size: 40px;
 	font-weight: bold;
+	transition: .3s ;
+	position: relative;
+}
+.menus ul li a:hover {
+	color: #0F6936;
+	margin-left: 15px;
+}
+.menus ul li a:hover:before {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 15px;
+	background: #0F6936;
+	top: 50%;
+	left: -25px;
+	transform: translateY(-50%);
+	transition: .5s;
 }
 .sidemenu__event {
 	background: #000;
@@ -1131,14 +1154,22 @@ h1, h2, h3, h4, h5, h6, p, span {
 .social_icons {
 	position: absolute;
 	bottom: 10%;
-	right: 50%;
+	right: 15%;
+	display: flex;
 } 
 .social_icons a {
 	color: #0A9444;
 	font-size: 18px;
+	padding: 0 10px;
 }
 .social__icon__logo img{
-	padding-top: 100px;
+	/* padding-top: 100px; */
+	max-width: 120px;
+	/* float: right; */
+	/* margin-right: 15px; */
+	position: absolute;
+	right: 15%;
+	top: 170px;
 }
 /* ----------------------------------------------------------------------------
 ------------------------ SideMenu Part End ------------------------------- */
@@ -1637,7 +1668,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .latest__eoi__con p {
 	font-size: 16px;
 	color:#787878;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 }
 .latest__eoi__con__btn {
 	width: 150px;
@@ -1771,6 +1802,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 .opportunities__part {
 	padding: 30px 0 150px;
 }
+.about__career__part {
+	padding: 40px 0;
+}
 .career__hero__con {
 	position: relative;
 }
@@ -1804,9 +1838,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 .role__view__btn a {
 	height: 40px;
 	width: 170px;
-	background: #922790;
 	font-size: 18px;
-	color: #fff;
+	color: #000;
 	font-weight: 700;
 	border-radius: 10px;
 	display: inline-block;
@@ -1815,10 +1848,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	box-shadow: 0 0 10px -6px #000;
 	margin: 50px 10px 30px 0;
 }
-.role__view__btn a:hover {
-	background: #fff;
-	color: #000;
+.role__view__btn a.active {
+	background: #922790;
+	color: #fff;
 }
+
+/* personal__details__con */
 .tcv__part.__role {
 	padding: 0;
 }

@@ -47,7 +47,7 @@ $(document).ready(function() {
         infinite: true,
         speed: 1000,
         autoplay: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: '.next__icon',
         prevArrow: '.prev__icon' ,
