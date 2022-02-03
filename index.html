@@ -30,6 +30,7 @@
 
             <!-- Own CSS -->
             <link rel="stylesheet" href="./assets/css/style.css">
+            <link rel="stylesheet" href="./assets/css/responsive.css">
 
             <style>
                 .pp-easing {
@@ -52,7 +53,7 @@
         <div class="main_menu position-fixed top-0 w-100">
             <!-- Partner's Header Part Start -->
             <header class="partner__header">
-                <div class="container">
+                <div class="container-lg">
                     <nav class="navigation py-2">
                         <div class="row">
                             <div class="col-3">
@@ -165,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 offset-1">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5 offset-sm-1">
                             <div class="menus">
                                 <ul>
                                     <li><a href="#">About</a></li>
@@ -178,7 +179,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                             <div class="social_icons__part">
                                 <span class="social__icon__logo">
                                     <a href="index.html"><img src="./assets/img/short_logo.png" alt=""></a>
@@ -202,29 +203,31 @@
                 <div class="section hero_part pp-scrollable " id="section1">
                     <div class="section-wrap">
                         <section class="slider_part">
-                            <div class="container">
+                            <div class="container-lg">
                                 <div class="slider__con__main">
-                                    <div class="row h-100">
-                                        <div class="col-6 h-100">
-                                            <div class="slider__con text-center d-flex align-items-end h-100">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="slider__con text-center d-flex">
                                                 <div class="slider__con__wrap">
                                                     <div class="banner_image">
                                                         <img src="./assets/img/short_logo.png" alt="">
                                                     </div>
                                                     <h1 class="welcome_to_a2i">WELCOME TO a2i</h1>
-                                                    <h3 class="pb-2">SIMPLIFYING GOVERNMENT</h3>
-                                                    <p style="padding-left: 55px;">Citizens need not travel more than 4, kilometers to access more than 150
-                                                        essential services from any if the 5865+ digital centres.</p>
-                                                    <div class="d-flex justify-content-center mt-3">
-                                                        <div class="line"></div>
+                                                    <div class="simplyfy__div">
+                                                        <h3 class="pb-2">SIMPLIFYING GOVERNMENT</h3>
+                                                        <p>Citizens need not travel more than 4, kilometers to access more than 150
+                                                            essential services from any if the 5865+ digital centres.</p>
+                                                        <div class="d-flex justify-content-center mt-3">
+                                                            <div class="line d_res_none"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <div class="slider__position__img__main" style="height: 100vh;">
-                                                <div class="big__a__b d-flex align-items-center justify-content-center h-100">
-                                                    <img src="./assets/img/bg_a.png" alt="">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  hero__gallery">
+                                            <div class="slider__position__img__main">
+                                                <div class="big__a__b d-flex justify-content-center">
+                                                    <img class="bg__hero" src="./assets/img/bg_a.png" alt="">
                                                     <div class="positioned__img__01">
                                                         <img src="./assets/img/main_index_bg (1).jpg" class="img-fluid w-100" alt="">
                                                     </div>
@@ -249,12 +252,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" scroll__animate">
+                            <div class=" scroll__animate d_res_none">
                                 <div class="scroll_border animate__animated animate__bounce animate__infinite animate__slower">
                                     <div class="dot animate__animated animate__bounce animate__infinite animate__slow"></div>
                                 </div>
                             </div>
-                            <p class="text-center scroll_text">Scroll Down</p>
+                            <p class="text-center scroll_text d_res_none">Scroll Down</p>
                         </section>
                     </div>
                 </div>
@@ -270,7 +273,6 @@
                                         </div>
                                         <div class="tcv__img__main">
                                             <div class="tcv__img">
-                                                <!-- <i class="fas fa-hourglass-half"></i> -->
                                                 <img src="./assets/img/tcv_img_02.jpg" class="img-fluid w-100">
                                                     <div class="tcv__img__overlay">
                                                         <a class="my-image-links" data-gall="gallery01" href="./assets/img/bd.jpg">VIEW NOW <i class="fas fa-arrow-right"></i></a>

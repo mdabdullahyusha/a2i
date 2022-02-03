@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 .slider__con__main {
 	height: 100vh;
 }
+.slider__con {
+	align-items: end;
+	height: 100%;
+}
 .slider__con h1 {
 	font-size: 46px;
 	color: #0A9444;
@@ -75,19 +79,23 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .slider__position__img__main {
 	position: relative;
+	height: 100vh;
+}
+.big__a__b {
+	height: 100%;
+	align-items: center;
 }
 .big__a__b img {
-	width: 270px;
+	max-width: 270px;
 }
-.positioned__img__01 {
+.positioned__img__01,
+.positioned__img__02,
+.positioned__img__03 {
 	height: auto;
-	width: 160px;
+	max-width: 145px;
 	background: #fff;
 	border-radius: 15px;
 	box-shadow: 0 0 15px -10px #000;
-	position: absolute;
-	top: 35%;
-	left: 5%;
 }
 .positioned__img__01 img {
 	border-radius: 15px;
@@ -98,29 +106,26 @@ h1, h2, h3, h4, h5, h6, p, span {
 .positioned__img__03 img {
 	border-radius: 15px;
 }
+.positioned__img__01 {
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
 .positioned__img__02 {
-	height: auto;
-	width: 160px;
-	background: #fff;
-	border-radius: 15px;
-	box-shadow: 0 0 15px -10px #000;
 	position: absolute;
 	bottom: 5%;
 	left: 55%;
 	transform: translateX(-50%);
 }
 .positioned__img__03 {
-	height: auto;
-	width: 160px;
-	background: #fff;
-	border-radius: 15px;
-	box-shadow: 0 0 15px -10px #000;
 	position: absolute;
 	top: 20%;
 	right: 10%;
 	/* transform: translateX(-50%); */
 }
-
+.slider__con__wrap p {
+	padding-left: 55px;
+}
 
 
 
@@ -891,7 +896,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Centre Part Start ----------------- */
 .digital__centre {
-	padding: 150px 0;
+	padding: 0 0 60px 0;
 }
 .digital__centre__con p:nth-child(1) {
 	color: #301E38;
