@@ -36,6 +36,12 @@
     .role__view__con {
         text-align: justify;
     }
+    .positioned__img__02 {
+        bottom: 13%;
+        left: 58%;
+    }
+    
+
 }
 
 @media (min-width: 768px) and (max-width:991.98px) {
@@ -144,6 +150,26 @@
     }
     .role__view__con {
         text-align: justify;
+    }
+    .positioned__img__02 {
+        bottom: 18%;
+        left: 63%;
+    }
+    .tcv__img {
+        width: 200px;
+    }
+    .tcv__img img {
+        width: 200px !important;
+    }
+    .tcv__img__02 img {
+        width: 220px;
+    }
+    .tcv__img__02 {
+        width: 220px;
+    }
+    
+    .slider__con__main {
+        height: 0 !important;
     }
 }
 
@@ -297,9 +323,26 @@
         display: flex;
         align-items: center;
     }
+    .simplyfy__div span {
+        display: none;
+    }
+    
+    .slider__con__img {
+        display: none;
+    }
+    .hero__gallery {
+        display: none;
+    }
+    .mb__res__img {
+        display: block !important;
+    }
+    .tcv__head {
+        padding: 30px 0;
+    }
+    .d__md__none {
+        display: none !important;
+    }
 }
-
-
 
 /* ------------------------------------------ */
 @media (max-width:575.98px) {
@@ -356,9 +399,9 @@
         height: 55vh;
     }
 
-    .simplyfy__div {
+    /* .simplyfy__div {
         margin-top: 70%;
-    }
+    } */
     .hero__gallery {
         margin-top: -20% !important;
     }
@@ -580,27 +623,50 @@
     .tender__details__con {
         text-align: justify;
     }
-}
-
-
-
-
-@media (max-width:400px) {
     .hero__gallery {
-        margin-top: -35%;
+        display: none;
     }
-    .big__a__b .bg__hero {
-        max-width: 45%;
+    .mb__res__img {
+        display: block !important;
     }
-    .positioned__img__01,
-    .positioned__img__02,
-    .positioned__img__03 {
-        max-width: 75px;
-    }
-    .positioned__img__02 {
-        bottom: 18%;
+    .slider__con__main {
+        height: 0 !important;
     }
     .simplyfy__div {
-        margin-top: 120%;
+        margin-top: 5%;
+    }
+    
+    .tcv__head {
+        padding: 30px 0;
+    }
+    .d__md__none {
+        display: none !important;
+    }
+    .pt__3 {
+        padding-top: 20px;
+    }
+    .about__img.about__img__02,
+    .about__img.about__img__03 {
+        width: 200px;
+    }
+    .about__line__none {
+        display: none !important;
+    }
+    .about__con {
+        padding-top: 30px;
+    }
+    .about__con p {
+        text-align: justify;
+    }
+    .transform__part {
+        background-size: 100% 350px;
+    }
+    .transform__img__line {
+        height: 100px;
+        width: 3px;
+    }
+    .transform__img__con {
+        display: block !important;
+        
     }
 }

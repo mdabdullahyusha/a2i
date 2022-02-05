@@ -238,7 +238,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	-ms-transition: .3s;
 	-o-transition: .3s;
 }
-
+.mb__res__img {
+	display: none !important;
+}
 
 
 .nav__bar {
@@ -423,6 +425,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	position: relative;
 	width: 250px;
 }
+
 .tcv__img__02 {
 	width: 250px;
 	position: absolute;
