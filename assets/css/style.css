@@ -16,6 +16,7 @@ ul, ol {
 a, a:hover {
 	text-decoration: none;
 	color: #000;
+	transition: .3s;
 } 
 img {
 	vertical-align: middle;
@@ -332,7 +333,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #fff;
 	margin: -50px auto 100px;
 	position: relative;
-	z-index: 999;
+	z-index: 1;
 	padding: 35px;
 	transition: all .3s ease;
 	text-transform: uppercase;
@@ -644,7 +645,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* ----------------------------------------------------------------------------
 ------------------------------ Team Page Start ----------------------------- */
 .team__header {
-	padding-top: 150px;
+	padding-top: 0;
 }
 .partners__info__inner.team {
 	box-shadow: 0 0 10px -3px #000;
@@ -662,6 +663,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 .contact__info ul li a {
 	font-size: 16px;
 	color: #787878;
+}
+.contact__info ul li a .icon {
+	padding-right: 15px;
 }
 .contact__info ul li {
 	padding: 3px 0;
@@ -686,6 +690,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 	color: #922790;
 	display: block;
 	padding-top: 5px;
+	transition: .3s;
+}
+.member__about a:hover {
+	color: #09a444;
 }
 .others__service__btn {
 	width: 100%;
@@ -746,7 +754,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* ----------------------------------------------------------------------------
 ------------------------------ Team View Page Start ------------------------ */
 .team__view__part {
-	padding: 150px 0 30px;
+	padding: 0 0 30px;
 }
 .team__view__con h3 {
 	font-size: 24px;
@@ -798,13 +806,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Equity Part Start ------------------- */
 .digital__equity {
-	padding: 150px 0 100px;
+	padding: 0 0 100px;
 	position: relative;
 	overflow-x: hidden;
 }
 .digital__equity__bg {
 	position: absolute;
-	top: -10%;
+	top: -21%;
 	right: -12%;
 }
 .digital__equity__bg img {
@@ -821,6 +829,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	width: 80px;
 	background: #fff;
 	border-radius: 50%;
+	margin: 0 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -828,6 +837,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .digital__equity__con__inner img {
 	width: 80px;
+}
+.digital__equity__head {
+	z-index: 411;
 }
 .digital__equity__head h1 {
 	font-size: 48px;
@@ -838,6 +850,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 18px;
 	color: #000;
 	padding-bottom: 20px;
+}
+.digital__equity__con p {
+	font-size: 18px;
+	color: #8F288D;
+	transition: .3s;
+}
+.digital__equity__con p:hover {
+	color: #0F6936;
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Equity Part End --------------------- */
@@ -871,7 +891,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	padding: 60px 0;
 }
 .digital__equity_3__head {
-	padding: 0 280px; 
+	padding: 0 20%; 
 }
 .digital__equity_3__head h3 {
 	font-size: 48px;
@@ -883,7 +903,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .digital__equity__3__con {
 	height: 200px;
-	width: 700px;
+	width: 150%;
 	background: #fff;
 	border-radius: 10px;
 	margin: 200px 0 0 -80px;
@@ -900,6 +920,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 40px;
 	color: #0A9444;
 	font-weight: bold;
+}
+.digital__centre__con.con__2__1 a {
+	transition: 0.3s;
+}
+.digital__centre__con.con__2__1 a:hover {
+	color: #0a9444;
+}
+.digital__centre__img img {
+	width: 400px;
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Equity Part 2 ENd ----------------- */
@@ -1076,9 +1105,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 /* ----------------------------------------------------------------------------
 -------------------- Digital Centre Single View Page Start ----------------- */
-.single__view {
+/* .single__view {
 	padding-top: 150px;
-}
+} */
 
 /* ----------------------------------------------------------------------------
 -------------------- Digital Centre Single View Page End -------------------- */
@@ -1302,7 +1331,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #fff;
 	padding: 50px 20px 10px;
 	margin-top: -160px;
-	box-shadow: 0 0 10px -6px #000;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .hero__con.__most {
 	width: 80%;
@@ -1324,9 +1353,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	display: block;
 	text-align: center;
 	line-height: 30px;
+	margin-top: 20px;
+	transition: .3s;
 }
 .publish__btn:hover {
 	color: #fff;
+	background: #0a9444;
 }
 .most__popular__head h3 {
 	font-size: 32px;
@@ -1341,15 +1373,38 @@ h1, h2, h3, h4, h5, h6, p, span {
 .top__publications__btn__main {
 	padding: 30px 0;
 }
-.top__publications__btn__main ul li a {
-	display: block;
-	padding: 0 15px;
+.top__publications__btn__main ul {
+	flex-wrap: wrap;
+}
+.top__publications__btn__main ul li {
+	padding: 15px;
+}
+.top__publications__btn__main ul li button:hover {
+	color: #fff;
+	height: 35px;
+	width: 180px;
+	background: #0A9444;
+	border-radius: 30px;
+	line-height: 35px;
+}
+.top__publications__btn__main ul li button {
+	/* display: block; */
+	background: transparent;
+	text-align: center;
+	transition: .3s;
+	height: 35px;
+	width: 180px;
+	line-height: 35px;
+	border: none;
 }
 .hero__con.publish__con {
 	margin: 0 0 30px;
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px -7px #000;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hero__con.__most p {
+	font-weight: 700;
 }
 .search__bar__con {
 	padding: 10px;
@@ -1421,9 +1476,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 .publish__info__con h6, 
 .publish__info__con p {
 	font-size: 16px;
+	color: #fff;
+}
+.publish__info__con.__blogs h6, 
+.publish__info__con.__blogs p {
 	color: #000;
 }
-
 .social__react__con span {
 	font-size: 20px;
 }
@@ -1711,7 +1769,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .tender__head {
-	padding-top: 90px;
+	/* padding-top: 90px; */
 }
 .tender__head h1 {
 	font-size: 40px;
@@ -1727,8 +1785,42 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 16px;
 	font-weight: 400;
 }
-
+.tender__head h6 span a {
+	transition: .3s;
+}
+.tender__head h6 span a:hover {
+	color: #0a9444;
+}
 .tender__img__postion {
+	margin-top: 15%;
+}
+.tender__img__postion > .__img > img {
+	width: 40%;
+}
+.box__position {
+	margin-top: -55%;
+}
+.box__position > .box__pos__1 > img,
+.box__position > .box__pos__2 > img {
+	width: 250px;
+}
+.box__inner__1 {
+	margin-top: -44%;
+	margin-left: 39%;
+}
+.box__inner__1 img,
+.box__inner__2 img {
+	width: 100px;
+}
+.box__pos__2 {
+	margin-top: -13%;
+	margin-left: 43%;
+}
+.box__inner__2 {
+	margin-top: -36%;
+	margin-left: -21%;
+}
+/* .tender__img__postion {
 	position: relative;
 }
 .box__position {
@@ -1742,14 +1834,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: rgb(201, 36, 36);
 	transform: rotate(45deg);
 	border-radius: 5px;
-	/* overflow-x: hidden; */
 }
 .bg__box__1 img {
 	transform: rotate(-45deg);
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* overflow: hidden; */
 }
 .sm__box__up {
 	height: 80px;
@@ -1779,13 +1869,19 @@ h1, h2, h3, h4, h5, h6, p, span {
 	bottom: -60%;
 	left: 5%;
 	border-radius: 5px;
-}
+} */
 /* ----------------------------------------------------------------------------
 ---------------------------- Latest EOI Page Start -------------------------- */
 
 
 /* ----------------------------------------------------------------------------
 ---------------------------- Tender Details Page Start --------------------- */
+.tender__details__con__head h3 {
+	font-size: 40px;
+	color: #0A9444;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
 .tender__details__con__img img {
 	border-radius: 10px;
 }
@@ -1829,14 +1925,25 @@ h1, h2, h3, h4, h5, h6, p, span {
 .about__career__part {
 	padding: 40px 0;
 }
-.career__hero__con {
+/* .career__hero__con {
 	position: relative;
+} */
+.career__hero__con {
+	width: 700px;
+	height: 300px;
+	background: #dddddd;
+	margin-top: 50px;
 }
+
 .career__hero__con__wrap {
 	position: absolute;
-	top: 50%;
-	left: 40%;
+	top: 47%;
+	left: 35%;
 	transform: translate(-50%, -50%);
+	background-color: #fff;
+	height: 260px;
+	width: 500px;
+	padding: 70px 0 15px 50px;
 }
 .career__hero__con__wrap h1{
 	font-size: 46px;
@@ -1852,6 +1959,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 16px;
 	color: #000;
 	padding-top: 10px;
+}
+.career__hero__con__wrap h5 a {
+	transition: .3s;
+}
+.career__hero__con__wrap h5:hover a{
+	color: #0A9444;
 }
 /* ----------------------------------------------------------------------------
 ---------------------------- Opportunities Page End ----------------------- */
@@ -1891,6 +2004,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 	color: #0A9444;
 	font-weight: 800;
 } 
+.form-control {
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+}
+.form-control:focus {
+	border: none;
+}
 /* ----------------------------------------------------------------------------
 ---------------------------- Career Role View Page End ------------------- */
 
