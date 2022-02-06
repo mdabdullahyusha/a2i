@@ -77,6 +77,43 @@ $(document).ready(function() {
         },
         ]});
     // End
+
+    // For Slick
+    $('.slick__scroller__slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 1000,
+      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: '.next__icon',
+      prevArrow: '.prev__icon' ,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+      },
+      ]});
+  // End
     $('.isotope').isotope({
       // options
       itemSelector: '.grid-item',
