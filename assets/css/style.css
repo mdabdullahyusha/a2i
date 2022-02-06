@@ -773,7 +773,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #922790;
 	color: #fff;
 }
-
+.others__member__head h3{
+	font-size: 24px;
+	color: #09a444;
+	font-weight: 700;
+	margin-top: 50px;
+}
 .others__members__con {
 	padding: 15px 25px;
 	box-shadow: 0 0 20px -13px #000;
@@ -1469,6 +1474,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.hero__con.publish__con h4 {
+	color: #0A9444;
+	font-weight: 700;
+}
+.hero__con.publish__con p {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+}
 .hero__con.__most p {
 	font-weight: 700;
 }
@@ -1759,6 +1773,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .download__pdf {
 	background: #922790;
 	border:none;
+	padding: 10px 0 !important;
 }
 .download__pdf:hover {
 	background: #922790;
