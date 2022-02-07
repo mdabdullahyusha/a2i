@@ -1438,22 +1438,24 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .most__popular__con {
 	padding: 15px 0 80px;
-}.top__publications {
+}
+.top__publications {
 	padding-top: 30px;
 }
 .top__publications__btn__main {
-	padding: 30px 0;
+	/* padding: 30px 0; */
 }
 .top__publications__btn__main ul {
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 .top__publications__btn__main ul li {
-	padding: 15px;
+	/* padding: 15px; */
+	margin: 10px 0;
 }
 .top__publications__btn__main ul li button:hover {
 	color: #fff;
-	height: 35px;
-	width: 180px;
+	/* height: 35px;
+	min-width: 180px; */
 	background: #0A9444;
 	border-radius: 30px;
 	line-height: 35px;

@@ -292,7 +292,7 @@
     .contact__part__menus {
         /* margin: auto; */
         text-align: center;
-        margin: 40px 0;
+        margin: 0;
     }
     .career__hero__con {
         margin-top: 6%;
@@ -461,6 +461,9 @@
     } 
     .pdd__4 {
         margin-top: 30px;
+    }
+    .d__res__sm__none {
+        display: none !important;
     }
 
 }
@@ -913,5 +916,8 @@
     .tcv__icon {
         padding: 25px;
         margin-top: 25px;
+    }
+    .d__res__sm__none {
+        display: none !important;
     }
 }
