@@ -121,9 +121,7 @@ $(document).ready(function() {
     });
     
 });
-// Mixitup
-var config = document.querySelector('#myMixCon');
-var mixer = mixitup(config);
+
 
 //navbar active deactive function
 function NavbarVisible () {
@@ -195,8 +193,9 @@ $(function(){
     $('.main_menu').removeAttr('style');
   }
 
-})
+});
 
+// Mixitup
 
 
 
