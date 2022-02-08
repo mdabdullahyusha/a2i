@@ -121,6 +121,9 @@ $(document).ready(function() {
     });
     
 });
+// Mixitup
+var config = document.querySelector('#myMixCon');
+var mixer = mixitup(config);
 
 //navbar active deactive function
 function NavbarVisible () {
