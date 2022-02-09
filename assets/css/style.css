@@ -1047,6 +1047,17 @@ h1, h2, h3, h4, h5, h6, p, span {
 .pr__30 {
 	padding: 0 30px 15px 15px;
 }
+.challenge_hidden {
+	width: 300px;
+	padding: 15px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	line-height: 1.8;
+	display: none;
+	position: absolute;
+	/* visibility: hidden; */
+
+}
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Centre Part End ----------------- */
 

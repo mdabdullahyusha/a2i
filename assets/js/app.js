@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+  $('.challenge_hidden_btn').click(function(){
+    $('.challenge_hidden').toggle(100);
+  });
+
     // For PagePiling
   $('#pagepiling').pagepiling({
       menu: '.menu',
