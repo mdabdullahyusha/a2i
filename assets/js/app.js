@@ -2,7 +2,7 @@ $(document).ready(function() {
     // For PagePiling
   $('#pagepiling').pagepiling({
       menu: '.menu',
-      direction: 'horizontal',
+      direction: 'vertical',
       verticalCentered: true,
       sectionsColor: [],
       anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
