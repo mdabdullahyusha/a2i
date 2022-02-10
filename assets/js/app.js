@@ -1,9 +1,16 @@
 $(document).ready(function() {
 
   $('.challenge_hidden_btn').click(function(){
-    $('.challenge_hidden').toggle(100);
+    var btn = $('.challenge_hidden_btn');
+    $('.challenge_hidden').slideToggle('slow', function(){
+      if ($('.challenge_hidden').is(':visible')) {
+        btn.text('Read Less');
+      }
+      else {
+        btn.text('Read More');
+      }
+    });
   });
-
     // For PagePiling
   $('#pagepiling').pagepiling({
       menu: '.menu',
