@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 .slider__con__main {
 	height: 100vh;
 }
+.partner__header {
+	background: #fff;
+}
 .slider__con {
 	align-items: end;
 	height: 100%;
@@ -402,6 +405,19 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-size: 24px;
 	color: #0A9444;
 	padding: 15px 10px 0;
+}
+.contact_form button {
+	width: 100%;
+	padding: 10px 0;
+	background: #922790;
+	border: none;
+}
+.contact_form button:hover {
+	background: rgba(10, 148, 68, 1);
+}
+.contact_form input {
+	padding: 15px 10px;
+	border: 1px solid rgba(10, 148, 68, .5);
 }
 /* ----------------------------------------------------------------------------
 ----------------------------- Contact Part End ----------------------------- */
@@ -892,12 +908,16 @@ h1, h2, h3, h4, h5, h6, p, span {
 	display: flex;
 	/* justify-content: space-between; */
 }
+.digital__equity__con a {
+	display: block;
+	padding: 0 15px;
+}
 .digital__equity__con__inner {
 	height: 80px;
 	width: 80px;
 	background: #fff;
 	border-radius: 50%;
-	margin: 0 15px;
+	/* margin: 0 15px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1049,8 +1069,16 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .challenge_hidden {
 	display: none;
-	/* visibility: hidden; */
-
+}
+.slick-dots li button {
+	background: lightgrey;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button{
+	background-color: gray;
+}
+.slick-dots {
+	text-align: left;
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ Digital Centre Part End ----------------- */

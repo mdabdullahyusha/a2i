@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
-  $('.challenge_hidden_btn').click(function(){
-    var btn = $('.challenge_hidden_btn');
-    $('.challenge_hidden').slideToggle('slow', function(){
-      if ($('.challenge_hidden').is(':visible')) {
-        btn.text('Read Less');
-      }
-      else {
-        btn.text('Read More');
-      }
-    });
-  });
+  // $('.challenge_hidden_btn').click(function(){
+  //   var btn = $('.challenge_hidden_btn');
+  //   $('.challenge_hidden').slideToggle('slow', function(){
+  //     if ($('.challenge_hidden').is(':visible')) {
+  //       btn.text('Read Less');
+  //     }
+  //     else {
+  //       btn.text('Read More');
+  //     }
+  //   });
+  // });
     // For PagePiling
   $('#pagepiling').pagepiling({
       menu: '.menu',
@@ -134,6 +134,32 @@ $(document).ready(function() {
     
 });
 
+$(document).ready(function(){
+  $('.slick_single_item').slick({
+    autoplay: true,
+    infinite: true,
+    speed: 3000,
+    nextArrow: '.next__icon',
+    prevArrow: '.prev__icon',
+  });
+});
+$(document).ready(function(){
+  $('.slick_single_item_02').slick({
+    autoplay: true,
+    infinite: true,
+    speed: 3000,
+    nextArrow: '.next__icon__02',
+    prevArrow: '.prev__icon__02',
+  });
+
+  $('.slick_slider_dot').slick({
+    autoplay: true,
+    infinite: true,
+    dots: true,
+    speed: 3000,
+  });
+});
+
 
 //navbar active deactive function
 function NavbarVisible () {
@@ -206,10 +232,6 @@ $(function(){
   }
 
 });
-
-// Mixitup
-
-
 
 //wow
 // new WOW().init();
