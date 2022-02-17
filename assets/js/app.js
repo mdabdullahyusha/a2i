@@ -196,11 +196,13 @@ $(function(){
       $('.logo').css({'visibility':'hidden', 'opacity': '0'});
       $('.menu').css({'visibility':'hidden', 'opacity':'0'});
       $('.main_menu').css({'background':'transparent'});
+      $('.padding_top').css({'padding-top':'100px'});
     }
     else {
       $('.collapse__bar').html('<i class="fas fa-bars"></i>');
       $('.non_index').removeClass('position-fixed');
       $('.non_index').addClass('position-relative');
+      $('.padding_top').css({'padding-top':'0px'});
 
     //menu css
     $('.logo').removeAttr('style');
@@ -219,11 +221,13 @@ $(function(){
           $('.logo').css({'visibility':'hidden', 'opacity': '0'});
           $('.menu').css({'visibility':'hidden', 'opacity':'0'});
           $('.main_menu').css({'background':'transparent'});
+          $('.padding_top').css({'padding-top':'100px'});
   }
   else {
     $('.collapse__bar').html('<i class="fas fa-bars"></i>');
     $('.non_index').removeClass('position-fixed');
     $('.non_index').addClass('position-relative');
+    $('.padding_top').css({'padding-top':'0px'});
 
     //menu css
     $('.logo').removeAttr('style');
