@@ -45,9 +45,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .slider__con__main {
 	height: 100vh;
 }
-.partner__header {
-	background: #fff;
-}
+
 .slider__con {
 	align-items: end;
 	height: 100%;
@@ -210,7 +208,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: transparent;
 	transition: .3s;
 }
-.main_menu.navbar-visible:hover {
+.main_menu.navbar-visible {
 	visibility: visible;
 	opacity: 1;
 	background: white;
