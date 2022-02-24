@@ -138,6 +138,7 @@ $(document).ready(function(){
   $('.slick_single_item').slick({
     autoplay: true,
     infinite: true,
+    dots: true,
     speed: 3000,
     nextArrow: '.next__icon',
     prevArrow: '.prev__icon',

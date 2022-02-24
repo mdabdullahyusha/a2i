@@ -342,22 +342,22 @@
                         <p class="pt-2">Here are some of the Top Publications</p>
                     </div>
                     <div class="top__publications__btn__main">
-                        <ul class=" d-flex justify-content-center">
-                            <li class="li"><button>All</button></li>
-                            <li class="li"><button>Digital Equity</button></li>
-                            <li class="li"><button>a2i Innovation Lab</button></li>
-                            <li class="li"><button>Impact Studies</button></li>
-                            <li class="li"><button>Policies & Strategies</but></li>
-                            <li class="li"><button>Infographics</button></li>
-                            <li class="li"><button>Results Brief</button></li>
+                        <ul class="d-flex justify-content-center mixitupbtn">
+                            <li class="li"><button data-filter="all">All</button></li>
+                            <li class="li"><button data-filter=".digital_equity_filter">Digital Equity</button></li>
+                            <li class="li"><button data-filter=".a2i_inno_lab_filter">a2i Innovation Lab</button></li>
+                            <li class="li"><button data-filter=".impact_stu_filter">Impact Studies</button></li>
+                            <li class="li"><button data-filter=".politics_filter">Policies & Strategies</but></li>
+                            <li class="li"><button data-filter=".infographic_filter">Infographics</button></li>
+                            <li class="li"><button data-filter=".result_filter">Results Brief</button></li>
                         </ul>
                     </div>
                     <div class="publication__con__main py-3">
                         <div class="row">
                             <div class="col-xl-9 col-lg-9 col-md-12 col-xm-12 col-12">
                                 <div class="publications__top__publications__main">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                                    <div class="row" id="myMixCon">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 digital_equity_filter result_filter mix">
                                             <a href="#">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -368,7 +368,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 a2i_inno_lab_filter infographic_filter mix">
                                             <a href="epublication_details.html">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -379,7 +379,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 impact_stu_filter politics_filter mix">
                                             <a href="epublication_details.html">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -390,7 +390,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-sm-4">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-sm-4 politics_filter impact_stu_filter mix">
                                             <a href="epublication_details.html">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -401,7 +401,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-4">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-4 infographic_filter mix">
                                             <a href="epublication_details.html">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -412,7 +412,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-4">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-4 result_filter mix">
                                             <a href="epublication_details.html">
                                                 <div class="publications__top__publications">
                                                     <div class="top__publications__img">
@@ -536,6 +536,9 @@
         <!-- Slick -->
         <script src="./assets/js/venobox.min.js"></script>
         
+        <!-- MixitUp Data Filtaring -->
+        <script src="./assets/js/mixitup.min.js"></script>
+        
         <!-- Own JS -->
         <script src="./assets/js/app.js"></script>
 
@@ -543,6 +546,8 @@
             $(function(){
                 $('.main_menu').addClass('navbar-visible');
             });
+            var config = document.querySelector('#myMixCon');
+            var mixer = mixitup(config);
         </script>
     </body>
 </html>

@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	width: 100%;
 	z-index: 111;
 }
-.logo img{
+.logo img {
 	width: 80px;
 }
 
@@ -1770,6 +1770,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	border-radius: 30px;
 	border:none;
 	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

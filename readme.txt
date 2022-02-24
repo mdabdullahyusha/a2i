@@ -1,3 +1,4 @@
 In Last Update:-
-Main Menu Bar Update
-Animation Glitch Update
+Button Link Update,
+Index Partner Part Sectionized.
+Mixiup Updated.
