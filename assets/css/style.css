@@ -1038,7 +1038,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	background: #FAFBFA;
 	padding: 60px 0;
 }
-
+.digital__centre__2_2 {
+	padding: 0;
+}
 .digital__centre__3 {
 	overflow-x: hidden;
 	padding: 30px 0;
@@ -1496,6 +1498,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 	padding: 15px;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hero__con.publish__con.most .p {
+	font-size: 14px;
+	font-weight: 400;
+}
+.hero__con.publish__con.most {
+	box-shadow: none;
 }
 .hero__con.publish__con h4 {
 	color: #0A9444;
