@@ -250,8 +250,77 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .menu {
 	display: none;
+	position: relative;
 }
-
+.parent__dropdown__menu:hover .main__dropdown__menu {
+	display: block;
+}
+.parent__dropdown__menu a i {
+	font-size: 12px;
+}
+.main__dropdown__menu {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	transition: 0.3s;
+	width: 290px;
+	background: #fff;
+	box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.24);
+	border-radius: 5px;
+}
+.main__dropdown__menu li a{
+	position: relative;
+}
+.main__dropdown__menu li a:before {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 15px;
+	background: #0F6936;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	display: none;
+}
+.main__dropdown__menu li a:hover {
+	color: #0F6936 !important;
+}
+.main__dropdown__menu li a:hover {
+	padding-left: 45px;
+}
+.main__dropdown__menu li a:hover::before {
+	display: block;
+}
+.main__dropdown__menu li:nth-child(1) {
+	padding-top: 15px;
+}
+.main__dropdown__menu li {
+	padding: 5px 0;
+}
+.side__menu,
+.side__menu__02
+ {
+	cursor: pointer;
+}
+.side__menu i,
+.side__menu__02 i {
+	font-size: 16px;
+}
+.side__drop__menu__02 li a,
+.side__drop__menu li a {
+	font-size: 18px !important;
+}
+.side__drop__menu__02,
+.side__drop__menu {
+	display: none;
+}
+/* .side__menu:hover .side__drop__menu {
+	display: block;
+} */
+.side__menu:hover .side__drop__menu li {
+	padding-left: 15px;
+}
 .main_menu.navbar-visible .menu {
 	display: flex;
 	visibility: hidden;
@@ -388,7 +457,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 ----------------------------- Contact Part Start --------------------------- */
 .contact__part {
 	background: #FAFBFA;
-	padding: 70px 0;
+	padding: 70px 0 0;
 }
 .contact__part__main li a {
 	color: #000;
@@ -429,6 +498,17 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .footer__part a {
 	color: #EB5D0F;
+}
+.right__side__support__img img {
+	/* height: 50px; */
+	width: 80px;
+}
+body .uwy.userway_p1 .uai {
+    top: 90vh !important;
+    right: auto;
+    bottom: auto;
+    left: calc(100vw - 13px);
+    transform: translate(-100%);
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ Footer Part End ----------------------------- */
@@ -617,13 +697,54 @@ h1, h2, h3, h4, h5, h6, p, span {
 ------------------------------ About Part End ------------------------------ */
 
 
+/* ----------------------------------------------------------------------------
+------------------------------ About Single Part Start ------------------------------ */
+.about__single__head {
+	padding: 0 180px 70px;
+}
+.about__single__head h1 {
+	color: #0A9444;
+	font-size: 48px;
+	font-weight: bold;
+}
+.about__single__con {
+	padding: 15px;
+	border: 2px solid #922790;
+	margin-bottom: 24px;
+}
+.about_con_details_head {
+	padding: 0 200px 30px;
+}
+.about_con_details_head h3 {
+	font-size: 34px;
+	text-align: center;
+}
+.about_con_details {
+	padding: 0 0 60px;
+}
+.model_part {
+	padding: 0 0 60px;
+}
+.awards_part {
+	padding: 0 0 60px;
+}
+.award_con_main > .row {
+	display: flex;
+	row-gap: 24px;
+}
+/* ----------------------------------------------------------------------------
+------------------------------ About Single Part End ------------------------------ */
+
+
 
 /* ----------------------------------------------------------------------------
 ------------------------------ Transform Part Start ------------------------ */
 .transform__part {
 	position: relative;
 }
-
+.simplifying_part {
+	padding: 120px 0 70px;
+}
 .transform__img__bg img {
 	width: 70%;
 }
@@ -713,6 +834,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 .transform__con__btn__main a:hover {
 	background: #0F6936;
 	color: #fff;
+}
+.simplifying_con_wrapper h3 {
+	font-size: 24px;
+	color: #0A9444;
+	font-weight: 700;
+}
+.simplifying_con_slider {
+	padding-top: 60px;
 }
 /* ----------------------------------------------------------------------------
 ------------------------------ Transform Part End ------------------------ */
@@ -1127,6 +1256,61 @@ h1, h2, h3, h4, h5, h6, p, span {
 	font-weight: 600;
 	padding: 5px 0;
 }
+.publication__con__short {
+	padding: 10px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 0 15px -12px rgba(0,0,0,0.8);
+}
+.publication__con__short__btn {
+	color: #922790;
+	font-weight: 600;
+}
+.publication__con__short__head h3 {
+	font-size: 32px;
+	color: #0A9444;
+	font-weight: 800;
+}
+.publication__con__short_wrapper h6,
+.blog__con__short__wrapper h6 {
+	font-size: 20px;
+	color: #0A9444;
+}
+.publication__con__short_wrapper p {
+	font-size: 14px;
+}
+
+.short__part {
+	padding: 60px 0;
+	background: #FAFBFA;
+}
+.blog__con__short__wrapper {
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0 0 15px -12px rgba(0,0,0,0.8);
+	border-radius: 0 5px 5px 0;
+}
+.blog__con__short__img img {
+	width: 160px;
+}
+.blog__con__short__wrapper p {
+	font-size: 14px;
+	padding: 5px 0;
+}
+.added__by__img img {
+	width: 50px;
+}
+.added__by__info {
+	padding-left: 10px;
+}
+.story__con__short__img img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+.short__part__02 {
+	padding: 60px 0;
+}
 .publication__btn {
 	display: block;
 	height: 35px;
@@ -1174,6 +1358,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	padding: 25px 15px;
 }
 .digital__centre__con.con__2__1 h1, 
+.digital__centre__con.con__2__1 p, 
 .digital__centre__con.con__2__1 a {
 	color: #fff;
 }
@@ -1203,6 +1388,22 @@ h1, h2, h3, h4, h5, h6, p, span {
 ------------------------------ Digital Centre Page 2 End ----------------- */
 
 
+
+/* ----------------------------------------------------------------------------
+-------------------- Digital Centre Page 3 Start ----------------- */
+.digital__centre__con.__3 {
+	box-shadow: 0 0 15px -12px rgb(0 0 0 / 80%);
+	padding: 15px;
+	border-radius: 10px;
+}
+.digital__centre__con.__3 h1 {
+	font-size: 36px;
+}
+.digital__centre__con.__3 a {
+	padding-top: 5px;
+}
+/* ----------------------------------------------------------------------------
+-------------------- Digital Centre Page 3 End -------------------- */
 
 /* ----------------------------------------------------------------------------
 -------------------- Digital Centre Single View Page Start ----------------- */
@@ -1257,10 +1458,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 .menus {
-	padding-top: 150px;
+	padding-top: 30px;
 }
 .menus ul li a {
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: bold;
 	transition: .3s ;
 	position: relative;
@@ -1936,56 +2137,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 	margin-top: -36%;
 	margin-left: -21%;
 }
-/* .tender__img__postion {
-	position: relative;
-}
-.box__position {
-	position: absolute;
-	top: 10%;
-	left: 0;
-}
-.bg__box__1 {
-	height: 250px;
-	width: 250px;
-	background: rgb(201, 36, 36);
-	transform: rotate(45deg);
-	border-radius: 5px;
-}
-.bg__box__1 img {
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.sm__box__up {
-	height: 80px;
-	width: 80px;
-	background: rgb(96, 155, 41);
-	transform: rotate(90deg);
-	position: absolute;
-	top: -40%;
-	right: 5%;
-	border-radius: 5px;
-}
-
-.bg__box__2 {
-	height: 230px;
-	width: 230px;
-	background: rgb(214, 218, 23);
-	transform: rotate(45deg);
-	border-radius: 5px;
-	margin: 90px 0 0 45px;
-}
-.sm__box__down {
-	height: 120px;
-	width: 120px;
-	background: rgb(31, 235, 133);
-	transform: rotate(90deg);
-	position: absolute;
-	bottom: -60%;
-	left: 5%;
-	border-radius: 5px;
-} */
 /* ----------------------------------------------------------------------------
 ---------------------------- Latest EOI Page Start -------------------------- */
 
@@ -2159,3 +2310,109 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 /* ----------------------------------------------------------------------------
 ---------------------------- Career Details Part End ------------------- */
+
+
+/* ----------------------------------------------------------------------------
+---------------------------- Press Release Part Start ------------------- */
+.press_release {
+	padding-bottom: 70px;
+}
+.press_release_head h3 {
+	font-size: 40px;
+	color: #0A9444;
+	font-weight: 800;
+}
+.press_rel_btn {
+	font-size: 18px;
+	color: #922790;
+	font-weight: 600;
+}
+.news_paper {
+	padding: 30px 0 70px;
+	background: #f1f1f1;
+}
+.newspaper_con {
+	background: #fff;
+}
+.newspaper_con.__2 {
+	box-shadow: 0 0 10px -8px black;
+}  
+.newspaper_con_wrapper {
+	padding: 10px;
+}
+.newspaper_con_img img {
+	width: 270px;
+}
+.newspaper_con_wrapper h5 {
+	font-size: 16px;
+	color: #0A9444;
+}
+.newspaper_con_wrapper h4 {
+	font-size: 20px;
+	padding: 8px 0;
+}
+.photo_gallery {
+	padding: 70px 0;
+}
+.photo_gly_img {
+	position: relative;
+}
+.photo_gly_img img {
+	border-radius: 10px;
+}
+.photo_gly_img_overlay {
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0), black);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: flex-end;
+	padding: 20px;
+}
+.photo_gly_img_overlay h4 {
+	color: #fff;
+}
+.video_con {
+	position: relative;
+}
+.video_con_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video_con_overlay a{
+	font-size: 60px;
+	color: rgba(255,255,255,0.7);
+}
+.video_con_wrapper h5 {
+	font-weight: 700;
+	padding-top: 15px;
+}
+.press_release_part, 
+.video_part {
+	padding-bottom: 70px;
+}
+.press_rel_con_wrapper > .row {
+	display: flex;
+	row-gap: 24px;
+	padding: 30px 0 0;
+}
+/* ----------------------------------------------------------------------------
+---------------------------- Press Release Part End ------------------- */
+
+
+/* ----------------------------------------------------------------------------
+---------------------------- Press Release Details Part Start ------------------- */
+.press_details_con p {
+	padding: 8px 0;
+}
+/* ----------------------------------------------------------------------------
+---------------------------- Press Release Details Part End ------------------- */

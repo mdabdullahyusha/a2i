@@ -53,6 +53,42 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('.simplifying__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '.next__icon',
+    prevArrow: '.prev__icon' ,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+    },
+    ]});
+});
+$(document).ready(function() {
     // For Slick
     $('.slick__slider').slick({
         dots: false,
@@ -78,6 +114,41 @@ $(document).ready(function() {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+        },
+        ]});
+    
+        $('.slick__slider__digital').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: '.next__icon__digital',
+        prevArrow: '.prev__icon__digital' ,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
             }
           },
           {
@@ -136,7 +207,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $('.slick_single_item').slick({
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     dots: true,
     speed: 3000,
@@ -146,9 +217,9 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $('.slick_single_item_02').slick({
-    autoplay: true,
+    autoplay: false,
     infinite: true,
-    speed: 3000,
+    speed: 2000,
     nextArrow: '.next__icon__02',
     prevArrow: '.prev__icon__02',
   });
@@ -247,4 +318,13 @@ new VenoBox({
   infinigall: true,
   share: true,
   spinner: 'rotating-plane',
+});
+
+$(document).ready(function(){
+  $('.side__menu').click(function(){
+      $('.side__drop__menu').toggle();
+  });
+  $('.side__menu__02').click(function(){
+      $('.side__drop__menu__02').toggle();
+  });
 });
